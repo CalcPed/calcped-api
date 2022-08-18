@@ -1,0 +1,24 @@
+{
+  "name": "calcped",
+  "version": "0.0.0",
+  "private": true,
+  "type":"module",
+  "scripts": {
+    "start:dev": "nodemon src/app.js",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
+    "postpretty": "yarn lint --fix"
+  },
+  "dependencies": {
+    "@prisma/client": "4.2.1",
+    "express": "^4.18.1",
+    "prisma": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
