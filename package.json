@@ -2,7 +2,7 @@
   "name": "calcped",
   "version": "0.0.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start:dev": "nodemon src/app.js",
     "lint": "./node_modules/.bin/eslint ./src",
@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@prisma/client": "4.2.1",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "prisma": "^4.2.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "eslint": "^8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
